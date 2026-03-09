@@ -1,0 +1,29 @@
+name                   = "domain-sale-page"
+compatibility_date     = "2024-09-23"
+pages_build_output_dir = "public"
+
+# ---------------------------------------------------------------
+# KV Namespaces
+# Create these with:
+#   npx wrangler kv namespace create RATE_LIMIT_KV
+#   npx wrangler kv namespace create SUBMISSIONS_KV
+# Then paste the returned IDs below.
+# ---------------------------------------------------------------
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id      = "REPLACE_WITH_RATE_LIMIT_KV_NAMESPACE_ID"
+
+[[kv_namespaces]]
+binding = "SUBMISSIONS_KV"
+id      = "REPLACE_WITH_SUBMISSIONS_KV_NAMESPACE_ID"
+
+# ---------------------------------------------------------------
+# Environment secrets — do NOT put real values here.
+# Set via Cloudflare Dashboard → Pages → Settings → Variables,
+# or with: npx wrangler secret put SECRET_NAME
+# ---------------------------------------------------------------
+# OWNER_EMAIL       = set in dashboard
+# FROM_EMAIL        = set in dashboard
+# SMTP2GO_API_KEY   = set in dashboard
+# TURNSTILE_SECRET  = set in dashboard

@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "turnstileSiteKey": "YOUR_TURNSTILE_SITE_KEY",
+    "supportEmail": "domains@yourbrand.com",
+    "canonicalHost": "domains.yourbrand.com"
+  },
+  "domains": [
+    {
+      "domain": "example.com",
+      "description": "Short, memorable .com — ideal for tech startups or SaaS products. Clean, one-word brand with broad market appeal.",
+      "askingPrice": 4500,
+      "minimumOffer": 1000,
+      "active": true
+    },
+    {
+      "domain": "premiumdomain.net",
+      "description": "Professional .net domain available for immediate transfer.",
+      "askingPrice": null,
+      "minimumOffer": 500,
+      "active": true
+    },
+    {
+      "domain": "sold-example.com",
+      "description": "This domain was previously listed.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": false
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Domain For Sale</title>
+  <meta name="description" content="This domain is available for purchase.">
+  <meta property="og:title" content="Domain For Sale">
+  <meta property="og:description" content="This domain is available for purchase. Submit an offer today.">
+  <meta property="og:type" content="website">
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "REPLACE_WITH_CF_ANALYTICS_TOKEN"}'></script>
+  <!-- Cloudflare Turnstile (loaded after sitekey is known) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <link rel="stylesheet" href="/style.css">
+  <noscript>
+    <style>
+      #app-noscript { display: flex !important; }
+      #app-loading { display: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- No-JS fallback -->
+  <div id="app-noscript" class="state-screen hidden">
+    <div class="state-card">
+      <div class="state-icon">⚠</div>
+      <h1>JavaScript Required</h1>
+      <p>This page requires JavaScript to detect the domain and display the listing.
+         Please enable JavaScript in your browser and reload the page.</p>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div id="app-loading" class="state-screen">
+    <div class="spinner" role="status" aria-label="Loading"></div>
+  </div>
+
+  <!-- Unknown domain -->
+  <div id="app-not-found" class="hidden">
+    <header class="header">
+      <div class="container">
+        <span class="header-badge">Domain Inquiry</span>
+        <h1 class="domain-name">Domain Not Listed</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="state-card centered">
+        <div class="state-icon">🔍</div>
+        <h2>This domain is not in our current listings.</h2>
+        <p>If you believe this is an error or would like to make an inquiry,
+           please contact us at <span id="not-found-email" class="email-text"></span></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Sold / inactive domain -->
+  <div id="app-sold" class="hidden">
+    <header class="header header--sold">
+      <div class="container">
+        <span class="header-badge">No Longer Available</span>
+        <h1 class="domain-name" id="sold-domain-name"></h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="state-card centered">
+        <div class="state-icon">✓</div>
+        <h2>This domain has been sold or is no longer listed.</h2>
+        <p>Thank you for your interest. Please check back later or contact us
+           at <span id="sold-email" class="email-text"></span></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Active listing -->
+  <div id="app-main" class="hidden">
+    <header class="header">
+      <div class="container">
+        <span class="header-badge">Domain For Sale</span>
+        <h1 class="domain-name" id="display-domain">example.com</h1>
+        <p class="header-tagline" id="display-tagline"></p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="layout">
+
+          <!-- Left column: domain info -->
+          <section class="domain-info" aria-label="Domain details">
+            <div class="info-card">
+              <h2>This domain is available for purchase</h2>
+              <p class="description" id="display-description"></p>
+
+              <div id="price-block" class="price-block hidden">
+                <div class="price-label">Asking Price</div>
+                <div class="price-value" id="display-price"></div>
+                <div class="price-note" id="minimum-note"></div>
+              </div>
+
+              <ul class="trust-list" aria-label="Why buy with confidence">
+                <li>
+                  <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Secure transfer via licensed escrow service
+                </li>
+                <li>
+                  <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Your inquiry is completely confidential
+                </li>
+                <li>
+                  <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Response within 1–2 business days
+                </li>
+                <li>
+                  <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  All major payment methods accepted
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Right column: offer form -->
+          <section class="form-section" aria-label="Submit an offer">
+            <div class="form-card">
+              <h2>Make an Offer</h2>
+              <p class="form-subtitle">Complete the form below and we'll get back to you within 1–2 business days.</p>
+
+              <!-- Success state (replaces form) -->
+              <div id="form-success" class="hidden" role="status" aria-live="polite">
+                <div class="success-icon" aria-hidden="true">✓</div>
+                <h3>Offer Submitted!</h3>
+                <p>Thank you, <strong id="success-name"></strong>. We've received your offer
+                   for <strong id="success-domain"></strong> and sent a confirmation to
+                   <strong id="success-email"></strong>.</p>
+                <p class="success-ref">Reference: <code id="success-ref"></code></p>
+                <p class="success-note">We'll be in touch within 1–2 business days.</p>
+              </div>
+
+              <!-- Error banner -->
+              <div id="form-error-global" class="error-banner hidden" role="alert" aria-live="assertive">
+                <p id="form-error-msg">Something went wrong. Please try again.</p>
+              </div>
+
+              <form id="offer-form" novalidate>
+                <!-- Honeypot — hidden from real users, filled by bots -->
+                <div class="hp-field" aria-hidden="true">
+                  <label for="website">Website</label>
+                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <input type="hidden" name="domain" id="form-domain">
+
+                <div class="field-group">
+                  <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+                  <input type="text" id="name" name="name" required autocomplete="name"
+                         placeholder="Jane Smith" aria-describedby="name-error">
+                  <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email"
+                         placeholder="jane@company.com" aria-describedby="email-error">
+                  <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="offerAmount">Offer Amount (USD) <span class="required" aria-label="required">*</span></label>
+                  <div class="input-prefix-wrap">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="offerAmount" name="offerAmount" required
+                           min="1" step="1" inputmode="numeric" placeholder="5000"
+                           aria-describedby="offerAmount-error">
+                  </div>
+                  <span class="field-error" id="offerAmount-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel"
+                         placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="field-group">
+                  <label for="message">Message <span class="optional">(optional)</span></label>
+                  <textarea id="message" name="message" rows="3"
+                            placeholder="Any additional details about your offer..."></textarea>
+                </div>
+
+                <!-- Cloudflare Turnstile (rendered by JS after sitekey loads) -->
+                <div class="field-group">
+                  <div id="turnstile-widget"></div>
+                  <span class="field-error" id="turnstile-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">
+                  <span class="btn-idle">Submit Offer →</span>
+                  <span class="btn-loading hidden" aria-hidden="true">Submitting…</span>
+                </button>
+
+                <p class="privacy-note">
+                  Your information is used only to respond to your inquiry and will not
+                  be shared with third parties.
+                </p>
+              </form>
+            </div>
+          </section>
+
+        </div><!-- .layout -->
+      </div><!-- .container -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>All domain transfers are handled through a licensed escrow service for buyer and seller protection.</p>
+      </div>
+    </footer>
+  </div><!-- #app-main -->
+
+  <script src="/main.js"></script>
+</body>
+</html>
