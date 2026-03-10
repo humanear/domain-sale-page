@@ -1,30 +1,100 @@
 {
   "settings": {
-    "turnstileSiteKey": "YOUR_TURNSTILE_SITE_KEY",
-    "supportEmail": "domains@yourbrand.com",
-    "canonicalHost": "domains.yourbrand.com"
+    "turnstileSiteKey": "0x4AAAAAABbm-VfB_sr5jiui",
+    "supportEmail": "domains@humanear.com",
+    "canonicalHost": "domain-sale-page-nkf.pages.dev"
   },
   "domains": [
     {
-      "domain": "example.com",
-      "description": "Short, memorable .com — ideal for tech startups or SaaS products. Clean, one-word brand with broad market appeal.",
-      "askingPrice": 4500,
-      "minimumOffer": 1000,
-      "active": true
-    },
-    {
-      "domain": "premiumdomain.net",
-      "description": "Professional .net domain available for immediate transfer.",
-      "askingPrice": null,
-      "minimumOffer": 500,
-      "active": true
-    },
-    {
-      "domain": "sold-example.com",
-      "description": "This domain was previously listed.",
+      "domain": "americanproper.com",
+      "description": "Strong patriotic lifestyle brand name. Well-suited for fashion, home goods, media, or any brand built around American identity and values.",
       "askingPrice": null,
       "minimumOffer": null,
-      "active": false
+      "active": true
+    },
+    {
+      "domain": "bangstorm.com",
+      "description": "High-energy, punchy brand name that commands attention. Great fit for gaming, entertainment, events, or a marketing agency.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "dftfy.com",
+      "description": "Short acronym-style .com — tech-forward and easy to remember. Ideal for a productivity app, browser extension, or SaaS tool.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "mutspa.com",
+      "description": "Short, distinctive name with broad appeal. Potential fit for a wellness brand, pet spa, lifestyle company, or unique startup.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "novaracollective.co",
+      "description": "Sophisticated, modern collective name. Perfect for a creative studio, consulting firm, design agency, or community platform.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "poglab.com",
+      "description": "Modern lab/studio brand name with a tech edge. Strong fit for a software shop, research lab, creative studio, or indie game developer.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "poglabs.com",
+      "description": "Companion domain to poglab.com — available together or separately. Ideal for a technology lab, software company, or R&D brand.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "righttruth.com",
+      "description": "Authoritative, memorable brand name for media or commentary. Strong fit for a news outlet, opinion platform, or political media brand.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "ripdc.com",
+      "description": "Short, bold, and highly memorable. Great for a DC-area brand, music act, entertainment company, or social commentary site.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "scinu.com",
+      "description": "Short 5-letter .com with a clean, modern feel. Versatile for tech, e-commerce, fintech, or any startup looking for a unique identity.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "sdhas.com",
+      "description": "Short, pronounceable 5-letter .com. A clean, open-slate domain for a startup, personal brand, or niche e-commerce venture.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "sidedumps.com",
+      "description": "Descriptive, niche domain with strong SEO potential. Ideal for a construction or hauling business, side hustle marketplace, or dump trailer dealer.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
+    },
+    {
+      "domain": "websux.com",
+      "description": "Edgy, instantly memorable domain with built-in attitude. Perfect for a web design critic, UX consultancy, developer community, or tech humor brand.",
+      "askingPrice": null,
+      "minimumOffer": null,
+      "active": true
     }
   ]
 }
