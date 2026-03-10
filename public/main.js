@@ -155,9 +155,8 @@
       turnstileId = window.turnstile.render('#turnstile-widget', {
         sitekey,
         'error-callback': function () {
-          // Widget failed — domain likely not in Turnstile allowlist.
-          // Mark as errored so form validation doesn't block submission.
           turnstileErrored = true;
+          hide('turnstile-widget');
         }
       });
     }
