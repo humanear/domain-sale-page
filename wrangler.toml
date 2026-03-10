@@ -12,11 +12,11 @@ pages_build_output_dir = "public"
 
 [[kv_namespaces]]
 binding = "RATE_LIMIT_KV"
-id      = "REPLACE_WITH_RATE_LIMIT_KV_NAMESPACE_ID"
+id      = "fc75418a5c8941e282859a689d249a27"
 
 [[kv_namespaces]]
 binding = "SUBMISSIONS_KV"
-id      = "REPLACE_WITH_SUBMISSIONS_KV_NAMESPACE_ID"
+id      = "64938b3063f84b8cbe8974441fdf127f"
 
 # ---------------------------------------------------------------
 # Environment secrets — do NOT put real values here.
