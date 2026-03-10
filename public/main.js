@@ -8,10 +8,11 @@
   'use strict';
 
   // ---- State ----
-  let currentDomain = null;
-  let domainConfig  = null;
-  let siteConfig    = null;
-  let turnstileId   = null;
+  let currentDomain   = null;
+  let domainConfig    = null;
+  let siteConfig      = null;
+  let turnstileId     = null;
+  let turnstileErrored = false;  // true when widget fails (domain not in allowlist)
 
   // ---- Init ----
   document.addEventListener('DOMContentLoaded', init);
@@ -151,7 +152,14 @@
         setTimeout(doRender, 200);
         return;
       }
-      turnstileId = window.turnstile.render('#turnstile-widget', { sitekey });
+      turnstileId = window.turnstile.render('#turnstile-widget', {
+        sitekey,
+        'error-callback': function () {
+          // Widget failed — domain likely not in Turnstile allowlist.
+          // Mark as errored so form validation doesn't block submission.
+          turnstileErrored = true;
+        }
+      });
     }
     doRender();
   }
@@ -197,7 +205,7 @@
       : null;
     const hasSitekey = siteConfig && siteConfig.turnstileSiteKey &&
                        siteConfig.turnstileSiteKey !== 'YOUR_TURNSTILE_SITE_KEY';
-    if (hasSitekey && !token) {
+    if (hasSitekey && !turnstileErrored && !token) {
       setError('turnstile', 'Please complete the verification check.');
       valid = false;
     } else {
